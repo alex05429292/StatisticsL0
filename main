@@ -303,5 +303,13 @@ def main() -> None:
                 pass
 
 
+def main_old() -> None:
+    art = text2art(text="LAYERZERO   STATS", font="standart")
+    print(colored(art,'light_blue'))
+    print(colored('Автор: t.me/cryptogovnozavod\n','light_cyan'))
+    
+    update_database()
+    make_table()
+
 if (__name__ == '__main__'):
     main()
