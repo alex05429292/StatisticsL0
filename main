@@ -73,6 +73,9 @@ def get_filtered_wallets(data_file: str) -> list:
     with open(data_file, 'r') as file:
         data = json.load(file)
 
+def get_filtered_wallets_all(data_file: str) -> list:
+    data = json.load(file)
+
     all_wallet_info = data['data']['get_execution']['execution_succeeded']['data']
     
     if (data_file == file_data1):
