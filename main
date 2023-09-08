@@ -120,6 +120,7 @@ def save_to_excel(wallets1: list, wallets2: list) -> None:
     
     workbook = xlsxwriter.Workbook(file_excel_table)
     worksheet = workbook.add_worksheet("Stats")
+    worksheet = workbook.add_worksheet("Log")
 
     header_format = workbook.add_format({
         'bold': True,
